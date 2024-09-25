@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-09-25T21:25:42 IST" name="Default suite" finished-at="2024-09-25T21:26:09 IST" duration-ms="27058">
+    <groups>
+    </groups>
+    <test started-at="2024-09-25T21:25:42 IST" name="Default test" finished-at="2024-09-25T21:26:09 IST" duration-ms="27058">
+      <class name="RapiFuzz.RapiFuzz.UseCase_1and2">
+        <test-method is-config="true" signature="setup()[pri:0, instance:RapiFuzz.RapiFuzz.UseCase_1and2@3d34d211]" started-at="2024-09-25T21:25:42 IST" name="setup" finished-at="2024-09-25T21:25:50 IST" duration-ms="7848" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="fun1()[pri:1, instance:RapiFuzz.RapiFuzz.UseCase_1and2@3d34d211]" started-at="2024-09-25T21:25:50 IST" name="fun1" finished-at="2024-09-25T21:25:51 IST" duration-ms="324" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fun1 -->
+        <test-method signature="fun2()[pri:2, instance:RapiFuzz.RapiFuzz.UseCase_1and2@3d34d211]" started-at="2024-09-25T21:25:51 IST" name="fun2" finished-at="2024-09-25T21:25:57 IST" duration-ms="6781" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fun2 -->
+        <test-method signature="fun3()[pri:3, instance:RapiFuzz.RapiFuzz.UseCase_1and2@3d34d211]" started-at="2024-09-25T21:25:57 IST" name="fun3" finished-at="2024-09-25T21:26:05 IST" duration-ms="7514" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fun3 -->
+        <test-method signature="fun4(java.lang.String,java.lang.String)[pri:4, instance:RapiFuzz.RapiFuzz.UseCase_1and2@3d34d211]" started-at="2024-09-25T21:26:05 IST" name="fun4" data-provider="data" finished-at="2024-09-25T21:26:07 IST" duration-ms="2017" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.fail(Assert.java:116)
+at RapiFuzz.RapiFuzz.UseCase_1and2.fun4(UseCase_1and2.java:348)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fun4 -->
+        <test-method signature="fun4(java.lang.String,java.lang.String)[pri:4, instance:RapiFuzz.RapiFuzz.UseCase_1and2@3d34d211]" started-at="2024-09-25T21:26:07 IST" name="fun4" data-provider="data" finished-at="2024-09-25T21:26:09 IST" duration-ms="2436" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fun4 -->
+      </class> <!-- RapiFuzz.RapiFuzz.UseCase_1and2 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
